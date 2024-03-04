@@ -1,0 +1,14 @@
+<div>
+    <div>#{{todo?.id}}</div>
+    <div [ngClass]="{'line-through':completeTodo}" *ngIf="!editTodo; else inputblock" (click)="completeToggle()" >{{todo?.title}}</div>
+    <ng-template #inputblock>
+        <input type="text" placeholder="Update title" [(ngModel)]="todoInput">
+    </ng-template>
+    <div>
+        <button *ngIf="!editTodo; else elseblock" (click)="updateToggle()">Edit</button>
+        <ng-template #elseblock>
+            <button (click)="updateTodo()">Update</button>
+        </ng-template>
+        <button (click)="deleteTodo()">Delete</button>
+    </div>
+</div>
