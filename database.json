@@ -1,0 +1,25 @@
+{
+    "todos": [
+    { 
+        "id": 1, 
+        "completed": false,
+        "title": "Title one"
+    },
+    { 
+        "id": 2, 
+        "completed": false,
+        "title": "Title two two"
+    },
+    { 
+        "id": 3, 
+        "completed": true,
+        "title": "Third 333"
+    }
+    ],
+    "users": [
+    { 
+        "id": 1, 
+        "username": "mili96", 
+        "type": "admin" }
+    ]
+  }
